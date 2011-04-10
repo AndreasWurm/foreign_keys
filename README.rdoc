@@ -1,0 +1,7 @@
+This is a simple extension to ActiveRecord which allows to set foreign key constraints.
+
+If you supply a table a foreign key will be created.
+
+  create_table :cars do |t|
+    t.belongs_to :person, :table => :persons
+  end
